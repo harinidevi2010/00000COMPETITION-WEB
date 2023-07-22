@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <script type="text/javascript">
+function sub()
+{
+if (document.getElementById("t1").value=="")
+ alert("please enter your username");
+else if(document.getElementById("t2").value=="")
+ alert("please enter your password");
+else
+ window.location="MOBILE.HTML";
+ }
+ </script>
+    
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Login From</title>
+    
+    <link rel="stylesheet" href="loginnew.css" />
+  </head>
+  <body>
+  
+    <div class="login_form_container">
+      <div class="login_form">
+        <h2>Login</h2>
+        <div class="input_group">
+          <input
+            type="text"
+            placeholder="Username" 
+			id="t1"
+            class="input_text"
+            autocomplete="off"
+          >
+        </div>
+        <div class="input_group">
+          <input
+            type="password"
+            placeholder="Password" 
+			id="t2"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="button_group" id="login_button">
+		         <a onclick="sub()"> 
+		 <h5> LOGIN </h5>  </a>
+        		</div>
+		
+		<div class="fotter">
+          <a>Forgot Password ?</a>
+          <a>SignUp</a>
+        </div>
+      </div>
+    </div>
+	<script src="loginnew.js"></script>
+  </body>
+</html>
